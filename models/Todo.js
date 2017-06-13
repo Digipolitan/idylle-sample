@@ -2,9 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const TodoSchema = Schema({
-
-//TODO.
-
+    title: String,
+    dueDate: Date
 });
 
-module.exports = mongoose.model('Todo', TodoSchema);
+return mongoose.model('Todo', TodoSchema);
